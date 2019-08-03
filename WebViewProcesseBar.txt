@@ -1,0 +1,28 @@
+setContentView(R.layout.activity_web);
+
+        WebView myWebView = (WebView) findViewById(R.id.webView);
+        progressBar = (ProgressBar)findViewById(R.id.prg);
+        progressBar.setMax(100);
+
+        myWebView.loadUrl("http://www.cineritzgoiania.com.br/filmes/programacao");
+        WebSettings webSettings = myWebView.getSettings();
+        webSettings.setJavaScriptEnabled(true);
+        webView.setWebViewClient(new WebViewClient());
+
+        webView.setWebChromeClient(new WebChromeClient(){
+            @Override
+            public void onProgressChanged(WebView view, int newProgress) {
+                super.onProgressChanged(view, newProgress);
+                progressBar.setProgress(newProgress);
+            }
+
+            @Override
+            public void onReceivedTitle(WebView view, String title) {
+                super.onReceivedTitle(view, title);
+            }
+
+            @Override
+            public void onReceivedIcon(WebView view, Bitmap icon) {
+                super.onReceivedIcon(view, icon);
+            }
+        });

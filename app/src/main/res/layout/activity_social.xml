@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SocialActivity"
+    android:background="@drawable/adrop">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.github.clans.fab.FloatingActionMenu
+            android:id="@+id/fabPrincipal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:menu_fab_label="Voltar"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true">
+
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btnWhatsapp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="WhatApp"
+                android:src="@drawable/action_wts"/>
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btnFacebook"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Facebook"
+                android:src="@drawable/action_fb"/>
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btnInst"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="Instagram"
+                android:src="@drawable/action_insta"/>
+            <com.github.clans.fab.FloatingActionButton
+                android:id="@+id/btnYou"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:fab_label="YouTube"
+                android:src="@drawable/action_yt"/>
+        </com.github.clans.fab.FloatingActionMenu>
+
+
+    </RelativeLayout>
+
+
+
+</android.support.constraint.ConstraintLayout>
